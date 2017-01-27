@@ -1,0 +1,27 @@
+#container {
+	border-style: dotted;
+
+}
+
+h1{
+	font-size: 30px;
+}
+
+.card {
+	height: 200px;
+	width: 120px;
+	border-style: solid;
+
+}
+
+#row1{
+	display:flex;
+	flex-flow: row nowrap;
+
+}
+
+#row2{
+	display:flex;
+	flex-flow: row nowrap;
+
+}
