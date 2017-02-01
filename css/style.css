@@ -1,89 +1,49 @@
-.card {
-	height: 200px;
-	width: 120px;
-	
+#ti {
+  background-color: lightblue;
+
+}
+#container{
+  background-color: grey;
+  padding-top: 20px;
+  height: 600px;
+}
+#row1 {
+  background-color: grey;
+  display: block;
+  margin-top: 100px;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+#row2 {
+  background-color: grey;
+  display: block;
+  margin-top: 100px;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
 }
 
-img	{
-	max-height: 200px;
-	width: 120px;
+.front, .back {
+  width: 120px;
+  height: 200px;
+  backface-visibility: hidden;
+  transition: transform 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+.one, .two, .three, .four, .five, .six, .seven, .eight{
+  position: relative;
 
-#f1{
-	top: 10px;
-	left: 10px;
-	position: absolute;
-	height: 200px;
-	width: 120px;
 }
-
-#b1 {
-	top: 10px;
-	left: 10px;
-	position: absolute;
-	height: 200px;
-	width: 120px;
-}
-
-#f1:hover {
-	visibility: hidden;
-}
-
-#f2{
-	top: 10px;
-	left: 150px;
-	position: absolute;
-	height: 200px;
-	width: 120px;
-}
-
-#b2 {
-	top: 10px;
-	left: 150px;
-	position: absolute;
-	height: 200px;
-	width: 120px;
-}
-
-#f2:hover {
-	visibility: hidden;
-}
-
-#f3{
-	top: 10px;
-	left: 300px;
-	position: absolute;
-	height: 200px;
-	width: 120px;
-}
-
-#b3 {
-	top: 10px;
-	left: 300px;
-	position: absolute;
-	height: 200px;
-	width: 120px;
-}
-
-#f3:hover {
-	visibility: hidden;
-}
-#f4{
-	top: 10px;
-	left: 450px;
-	position: absolute;
-	height: 200px;
-	width: 120px;
-}
-
-#b4 {
-	top: 10px;
-	left: 450px;
-	position: absolute;
-	height: 200px;
-	width: 120px;
-}
-
-#f4:hover {
-	visibility: hidden;
+.front {
+  transform: rotateY(-180deg);
+  position: absolute;
+  top: 0px;
+  left: 0px; 
 }
