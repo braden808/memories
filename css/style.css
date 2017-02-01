@@ -1,50 +1,89 @@
-#container {
-	border-style: dotted;
-
-}
-
-h1{
-	font-size: 30px;
-}
-
-.flip {
+.card {
 	height: 200px;
 	width: 120px;
-	border-style: solid;
-	margin: 10px;
-	float: left;
-
+	
 }
 
-
-#row1{
-	display:flex;
-	flex-flow: row nowrap;
-
+img	{
+	max-height: 200px;
+	width: 120px;
 }
 
-#row2{
-	display:flex;
-	flex-flow: row nowrap;
+#f1{
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+}
 
+#b1 {
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
 }
-.flip{ width:120; height:200px; margin:10px; float:left; }
-.flip > .front{
-	position:absolute;
-	transform: perspective( 600px ) rotateY( 0deg );
-	background:#FC0; width:240px; height:200px; border-radius: 7px;
-	backface-visibility: hidden;
-	transition: transform .5s linear 0s;
+
+#f1:hover {
+	visibility: hidden;
 }
-.flip> .back{
-	position:absolute;
-	transform: perspective( 600px ) rotateY( 180deg );
-	background: #80BFFF; width:240px; height:200px; border-radius: 7px;
-	backface-visibility: hidden;
-	transition: transform .5s linear 0s;
+
+#f2{
+	top: 10px;
+	left: 150px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
 }
-.flip:hover > .front{
-	transform: perspective( 600px ) rotateY( -180deg );
+
+#b2 {
+	top: 10px;
+	left: 150px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
 }
-.flip:hover > .back{
-	transform: perspective( 600px ) rotateY( 0deg );
+
+#f2:hover {
+	visibility: hidden;
+}
+
+#f3{
+	top: 10px;
+	left: 300px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+}
+
+#b3 {
+	top: 10px;
+	left: 300px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+}
+
+#f3:hover {
+	visibility: hidden;
+}
+#f4{
+	top: 10px;
+	left: 450px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+}
+
+#b4 {
+	top: 10px;
+	left: 450px;
+	position: absolute;
+	height: 200px;
+	width: 120px;
+}
+
+#f4:hover {
+	visibility: hidden;
+}
