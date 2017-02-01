@@ -1,111 +1,29 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Match Maker</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-
-</head>
-<body>
-
-  <header>
-  	<center>
-  		<h1>Memory Game</h1>
-  	</center>
-  </header>
-
-	<div id="container">
-
-		<div id="row1">
-			<div class="flip">
-				<div class="card" class="front"></div>
-				<div class="card" class="back"></div>
-			</div>
-			<div class="flip">
-				<div class="card" class="front"></div>
-				<div class="card" class="back"></div>
-			</div>
-			<div class="flip">
-				<div class="card" class="front"></div>
-				<div class="card" class="back"></div>
-			</div>
-			<div class="flip">
-				<div class="card" class="front"></div>
-				<div class="card" class="back"></div>
-			</div>
-		</div>
-		<div id="row2">
-			<div class="flip">
-				<div class="card" class="front"></div>
-				<div class="card" class="back"></div>
-			</div>	
-			<div class="flip">
-				<div class="card" class="front"></div>
-				<div class="card" class="back"></div>
-			</div>
-			<div class="flip">
-				<div class="card" class="front"></div>
-				<div class="card" class="back"></div>
-			</div>
-			<div class="flip">
-				<div class="card" class="front"></div>
-				<div class="card" class="back"></div>
-			</div>	
-		</div>
-	</div>
-	
-
-
-<script type="text/javascript" src="js/app.js"></script>
-<script>newboard()</script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>Memory</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+		<title>Memory Game</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<div class="container" >
-		  	<div id="row1">
-			  <div class="flip">
-			    <div class="back">Box 1 - Back</div>
-			    <div class="front">Box 1 - Front</div>
-			  </div>
-			  <div class="flip">
-			    <div class="back">Box 2 - Back</div>
-			    <div class="front">Box 2 - Front</div>
-			  </div>
-			  <div class="flip">
-			    <div class="back">Box 3 - Back</div>
-			    <div class="front">Box 3 - Front</div>
-			  </div>
-			  <div class="flip">
-			    <div class="back">Box 4 - Back</div>
-			    <div class="front">Box 4 - Front</div>
-			  </div>
+		<div id="container">
+			<div class="card">
+				<img id="b1" src="assets/harambe.jpg">
+				<img id="f1" src="assets/card.jpg">
+			</div class="card">
+			<div >
+				<img id="b2" src="assets/hayashi.jpg">
+				<img id="f2" src="assets/card.jpg">
+			</div class="card">
+			<div >
+				<img id="b3" src="assets/jesus.jpg">
+				<img id="f3" src="assets/card.jpg">
 			</div>
-			<div id="row2">
-			  <div class="flip">
-			    <div class="back">Box 5 - Back</div>
-			    <div class="front">Box 5 - Front</div>
-			  </div>
-			  <div class="flip">
-			    <div class="back">Box 6 - Back</div>
-			    <div class="front">Box 6 - Front</div>
-			   </div>
-			   <div class="flip">
-			    <div class="back">Box 7 - Back</div>
-			    <div class="front">Box 7 - Front</div>
-			  </div>
-			  <div class="flip">
-			    <div class="back">Box 8 - Back</div>
-			    <div class="front">Box 8 - Front</div>
-			  </div>
-			</div>
-		</div>
+			<div class="card">
+				<img id="b4" src="assets/trump.jpg">
+				<img id="f4" src="assets/card.jpg">
+			</div >
+		</div>	
 	</body>
-	</html>
+	<script type="text/javascript" src="js/app.js"></script>
+</html>
