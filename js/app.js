@@ -1,79 +1,54 @@
-function changea(){
-  document.getElementById("f1").style.transform = "rotateY(0deg)";
-  document.getElementById("b1").style.transform= "rotateY(-180deg)";
 }
 
-function changeaa(){
-  document.getElementById("f1").style.transform = "rotateY(-180deg)";
-  document.getElementById("b1").style.transform= "rotateY(0deg)";
-}
+function check(){
+  console.log(firstFlip);
+  console.log(secondFlip);
+  console.log(flipCounter);
+  console.log("--------");
 
-function changeb(){
-  document.getElementById("f2").style.transform = "rotateY(0deg)";
-  document.getElementById("b2").style.transform= "rotateY(-180deg)";
-}
-
-function changebb(){
-  document.getElementById("f2").style.transform = "rotateY(-180deg)";
-  document.getElementById("b2").style.transform= "rotateY(0deg)";
-}
-
-function changec(){
-  document.getElementById("f3").style.transform = "rotateY(0deg)";
-  document.getElementById("b3").style.transform= "rotateY(-180deg)";
-}
-
-function changecc(){
-  document.getElementById("f3").style.transform = "rotateY(-180deg)";
-  document.getElementById("b3").style.transform= "rotateY(0deg)";
-}
-
-function changed(){
-  document.getElementById("f4").style.transform = "rotateY(0deg)";
-  document.getElementById("b4").style.transform= "rotateY(-180deg)";
-}
-
-function changedd(){
-  document.getElementById("f4").style.transform = "rotateY(-180deg)";
-  document.getElementById("b4").style.transform= "rotateY(0deg)";
-}
-
-function changee(){
-  document.getElementById("f5").style.transform = "rotateY(0deg)";
-  document.getElementById("b5").style.transform= "rotateY(-180deg)";
-}
-
-function changeee(){
-  document.getElementById("f5").style.transform = "rotateY(-180deg)";
-  document.getElementById("b5").style.transform= "rotateY(0deg)";
-}
+  setTimeout(function(){
+    if(firstFlip == secondFlip){
+      if(firstFlip == 1){
+        document.getElementById("first").style.display = "none";
+        document.getElementById("fifth").style.display = "none";
+      }
+      if(firstFlip == 2){
+        document.getElementById("second").style.display = "none";
+        document.getElementById("sixth").style.display = "none";
+      }
+      if(firstFlip == 3){
+        document.getElementById("third").style.display = "none";
+        document.getElementById("seventh").style.display = "none";
+      }
+      if(firstFlip == 4){
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("eighth").style.display = "none";
+      }
 
 
-function changef(){
-  document.getElementById("f6").style.transform = "rotateY(0deg)";
-  document.getElementById("b6").style.transform= "rotateY(-180deg)";
+      flipCounter = 0;
+      firstFlip = 0;
+      secondFlip = 0; 
+    }
+  }, 1500);
+
+  setTimeout(
+    function delay(){
+      if(flipCounter == 2 && firstFlip != secondFlip){
+        flipCounter = 0;
+        firstFlip = 0;
+        secondFlip = 0;
+        
+        var idFrontNames = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8"];
+        var idBackNames = ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8"];
+        for(var z = idFrontNames.length; z > 0; z--){
+          frontId = idFrontNames.splice(0, 1)[0];
+          backId = idBackNames.splice(0, 1)[0];
+          
+          document.getElementById(frontId).style.transform = "rotateY(-180deg)";
+          document.getElementById(backId).style.transform = "rotateY(0deg)";    
+        }
+      }
+  },1000);
 }
 
-function changeff(){
-  document.getElementById("f6").style.transform = "rotateY(-180deg)";
-  document.getElementById("b6").style.transform= "rotateY(0deg)";
-}
-
-function changeg(){
-  document.getElementById("f7").style.transform = "rotateY(0deg)";
-  document.getElementById("b7").style.transform= "rotateY(-180deg)";
-}
-
-function changegg(){
-  document.getElementById("f7").style.transform = "rotateY(-180deg)";
-  document.getElementById("b7").style.transform= "rotateY(0deg)";
-}
-function changeh(){
-  document.getElementById("f8").style.transform = "rotateY(0deg)";
-  document.getElementById("b8").style.transform= "rotateY(-180deg)";
-}
-
-function changehh(){
-  document.getElementById("f8").style.transform = "rotateY(-180deg)";
-  document.getElementById("b8").style.transform= "rotateY(0deg)";
-}
