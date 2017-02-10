@@ -97,21 +97,30 @@ setTimeout(function(){
       document.getElementById("first").style.display = "none";
       document.getElementById("fifth").style.display = "none";
       cardcount++;
+      document.getElementById("points").innerText = cardcount;
     }
     if(firstFlip == 2){
       document.getElementById("second").style.display = "none";
       document.getElementById("sixth").style.display = "none";
       cardcount++;
+      document.getElementById("points").innerText = cardcount;
     }
     if(firstFlip == 3){
       document.getElementById("third").style.display = "none";
       document.getElementById("seventh").style.display = "none";
       cardcount++;
+      document.getElementById("points").innerText = cardcount;
     }
     if(firstFlip == 4){
       document.getElementById("fourth").style.display = "none";
       document.getElementById("eighth").style.display = "none";
       cardcount++;
+      document.getElementById("points").innerText = cardcount;
+    }
+    //Victory Message
+    if(cardcount == 4) {
+    document.getElementById("winnah").style.fontSize = "xx-large";
+    document.getElementById("winnah").innerText = "You Win!";
     }
 
 
@@ -143,9 +152,3 @@ setTimeout(
 
 var cardcount = 0;
 
-function win() {
-  var victory = document.getElementById("row1");
-  if(cardcount == 3){
-        victory.style.backgroundColor = "lightblue";
-  }
-}
